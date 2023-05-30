@@ -21,13 +21,7 @@ data:
         @id filter_kube_metadata
       </filter>
 
-      <filter **>
-        @type record_transformer
-        @id filter_containers_stream_transformer
-        <record>
-          stream_name ${tag_parts[3]}
-        </record>
-      </filter>
+
 
       <match **>
         @type cloudwatch_logs
